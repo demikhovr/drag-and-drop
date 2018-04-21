@@ -36,6 +36,7 @@ body {
   outline: none;
   -webkit-filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.3));
           filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.3));
+  -webkit-tap-highlight-color: transparent;
 }
 .example__btn:active {
   -webkit-filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.3));
@@ -85,7 +86,7 @@ body {
   .example__btn {
     display: block;
     width: 90%;
-    margin: 0 auto;
+    margin: 20px auto;
     margin-bottom: 40px;
   }
 
