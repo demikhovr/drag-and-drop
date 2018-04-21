@@ -1,3 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
 .example {
   display: flex;
   justify-content: center;
@@ -54,4 +71,28 @@
 }
 .draggable-div.dragged {
   box-shadow: 7px 7px 20px rgba(40, 40, 40, 0.75);
+}
+
+@media (max-width: 767px) {
+  .example {
+    flex-grow: 1;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .example__btn {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .example__output {
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .draggable-div {
+    max-width: 400px;
+  }
 }
